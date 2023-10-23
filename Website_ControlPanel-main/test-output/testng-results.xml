@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="16" passed="13" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-27T18:10:04 IST" name="Suite" finished-at="2023-01-27T18:13:44 IST" duration-ms="219247">
+    <groups>
+      <group name="EMagazine">
+        <method signature="EMagazinePageTest.addingMagazine()[pri:6, instance:Test.EMagazinePageTest@62379589]" name="addingMagazine" class="Test.EMagazinePageTest"/>
+      </group> <!-- EMagazine -->
+      <group name="Locations">
+        <method signature="LocationPageTest.Editloc()[pri:11, instance:Test.LocationPageTest@3754a4bf]" name="Editloc" class="Test.LocationPageTest"/>
+      </group> <!-- Locations -->
+      <group name="EventsP">
+        <method signature="EventsPageTest.EventsEdit()[pri:2, instance:Test.EventsPageTest@5e0e82ae]" name="EventsEdit" class="Test.EventsPageTest"/>
+      </group> <!-- EventsP -->
+    </groups>
+    <test started-at="2023-01-27T18:10:04 IST" name="Test" finished-at="2023-01-27T18:13:44 IST" duration-ms="219247">
+      <class name="Test.EMagazinePageTest">
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:11:42 IST" name="objectInitiate" finished-at="2023-01-27T18:11:42 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectInitiate -->
+        <test-method signature="enteringMagazinePage()[pri:5, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:11:42 IST" name="enteringMagazinePage" depends-on-groups="EventsP" finished-at="2023-01-27T18:11:45 IST" duration-ms="3011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringMagazinePage -->
+        <test-method signature="addingMagazine()[pri:6, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:11:45 IST" name="addingMagazine" finished-at="2023-01-27T18:12:35 IST" duration-ms="50539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingMagazine -->
+        <test-method signature="editingMagazine()[pri:7, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:12:35 IST" name="editingMagazine" finished-at="2023-01-27T18:12:49 IST" duration-ms="13602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editingMagazine -->
+        <test-method signature="deleteMagazine()[pri:8, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:12:49 IST" name="deleteMagazine" finished-at="2023-01-27T18:12:55 IST" duration-ms="6275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMagazine -->
+        <test-method signature="paginationTest()[pri:9, instance:Test.EMagazinePageTest@62379589]" started-at="2023-01-27T18:12:55 IST" name="paginationTest" finished-at="2023-01-27T18:13:00 IST" duration-ms="5293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paginationTest -->
+      </class> <!-- Test.EMagazinePageTest -->
+      <class name="Test.LocationPageTest">
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.LocationPageTest@3754a4bf]" started-at="2023-01-27T18:13:00 IST" name="objectInitiate" finished-at="2023-01-27T18:13:00 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectInitiate -->
+        <test-method signature="enteringLoc()[pri:10, instance:Test.LocationPageTest@3754a4bf]" started-at="2023-01-27T18:13:00 IST" name="enteringLoc" depends-on-groups="EMagazine" finished-at="2023-01-27T18:13:20 IST" duration-ms="19118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringLoc -->
+        <test-method signature="Editloc()[pri:11, instance:Test.LocationPageTest@3754a4bf]" started-at="2023-01-27T18:13:20 IST" name="Editloc" finished-at="2023-01-27T18:13:38 IST" duration-ms="18357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Editloc -->
+        <test-method signature="deleteLoc()[pri:12, instance:Test.LocationPageTest@3754a4bf]" started-at="2023-01-27T18:13:38 IST" name="deleteLoc" finished-at="2023-01-27T18:13:41 IST" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLoc -->
+        <test-method signature="paginationTest()[pri:13, instance:Test.LocationPageTest@3754a4bf]" started-at="2023-01-27T18:13:41 IST" name="paginationTest" finished-at="2023-01-27T18:13:44 IST" duration-ms="2438" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="ant-pagination-item-link" type="button" tabindex="-1">...</button> is not clickable at point (1315, 596). Other element would receive the click: <div class="ant-spin-container">...</div>
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0ab26c3e7c803723a624bd5b09aec0e, clickElement {id=b4acc9aa-d7a7-4a34-a2a8-f4717f0cbb0a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55798/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a0ab26c3e7c803723a624bd5b09aec0e)] -> xpath: (//button[@class='ant-pagination-item-link'])[2]]
+Session ID: a0ab26c3e7c803723a624bd5b09aec0e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="ant-pagination-item-link" type="button" tabindex="-1">...</button> is not clickable at point (1315, 596). Other element would receive the click: <div class="ant-spin-container">...</div>
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0ab26c3e7c803723a624bd5b09aec0e, clickElement {id=b4acc9aa-d7a7-4a34-a2a8-f4717f0cbb0a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55798/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a0ab26c3e7c803723a624bd5b09aec0e)] -> xpath: (//button[@class='ant-pagination-item-link'])[2]]
+Session ID: a0ab26c3e7c803723a624bd5b09aec0e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at PageOrder.LocationPage.Nextpagination(LocationPage.java:121)
+at Test.LocationPageTest.paginationTest(LocationPageTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paginationTest -->
+      </class> <!-- Test.LocationPageTest -->
+      <class name="Test.EventsPageTest">
+        <test-method is-config="true" signature="initilization()[pri:0, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:09:59 IST" name="initilization" finished-at="2023-01-27T18:10:04 IST" duration-ms="5519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:10:04 IST" name="objectInitiate" finished-at="2023-01-27T18:10:05 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectInitiate -->
+        <test-method signature="displayLogo()[pri:0, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:10:05 IST" name="displayLogo" finished-at="2023-01-27T18:10:05 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayLogo -->
+        <test-method signature="EventsAdd()[pri:1, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:10:05 IST" name="EventsAdd" finished-at="2023-01-27T18:11:09 IST" duration-ms="64142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EventsAdd -->
+        <test-method signature="EventsEdit()[pri:2, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:11:09 IST" name="EventsEdit" finished-at="2023-01-27T18:11:21 IST" duration-ms="11831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EventsEdit -->
+        <test-method signature="EventsDelete()[pri:3, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:11:21 IST" name="EventsDelete" finished-at="2023-01-27T18:11:26 IST" duration-ms="5480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EventsDelete -->
+        <test-method signature="PaginationTest()[pri:4, instance:Test.EventsPageTest@5e0e82ae]" started-at="2023-01-27T18:11:26 IST" name="PaginationTest" finished-at="2023-01-27T18:11:42 IST" duration-ms="15359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaginationTest -->
+      </class> <!-- Test.EventsPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

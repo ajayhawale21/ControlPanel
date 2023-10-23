@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">219,247</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.LocationPageTest</td><td><a href="#m0">paginationTest</a></td><td rowspan="1">1674823421727</td><td rowspan="1">2438</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Test.EMagazinePageTest</td><td><a href="#m1">addingMagazine</a></td><td rowspan="1">1674823305199</td><td rowspan="1">50539</td></tr><tr class="passedeven"><td><a href="#m2">deleteMagazine</a></td><td rowspan="1">1674823369355</td><td rowspan="1">6275</td></tr><tr class="passedeven"><td><a href="#m3">editingMagazine</a></td><td rowspan="1">1674823355746</td><td rowspan="1">13602</td></tr><tr class="passedeven"><td><a href="#m4">enteringMagazinePage</a></td><td rowspan="1">1674823302173</td><td rowspan="1">3011</td></tr><tr class="passedeven"><td><a href="#m5">paginationTest</a></td><td rowspan="1">1674823375639</td><td rowspan="1">5293</td></tr><tr class="passedodd"><td rowspan="5">Test.EventsPageTest</td><td><a href="#m6">EventsAdd</a></td><td rowspan="1">1674823205284</td><td rowspan="1">64142</td></tr><tr class="passedodd"><td><a href="#m7">EventsDelete</a></td><td rowspan="1">1674823281301</td><td rowspan="1">5480</td></tr><tr class="passedodd"><td><a href="#m8">EventsEdit</a></td><td rowspan="1">1674823269450</td><td rowspan="1">11831</td></tr><tr class="passedodd"><td><a href="#m9">PaginationTest</a></td><td rowspan="1">1674823286792</td><td rowspan="1">15359</td></tr><tr class="passedodd"><td><a href="#m10">displayLogo</a></td><td rowspan="1">1674823205134</td><td rowspan="1">126</td></tr><tr class="passedeven"><td rowspan="3">Test.LocationPageTest</td><td><a href="#m11">Editloc</a></td><td rowspan="1">1674823400072</td><td rowspan="1">18357</td></tr><tr class="passedeven"><td><a href="#m12">deleteLoc</a></td><td rowspan="1">1674823418434</td><td rowspan="1">3288</td></tr><tr class="passedeven"><td><a href="#m13">enteringLoc</a></td><td rowspan="1">1674823380950</td><td rowspan="1">19118</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Test.LocationPageTest#paginationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ant-pagination-item-link&quot; type=&quot;button&quot; tabindex=&quot;-1&quot;&gt;...&lt;/button&gt; is not clickable at point (1315, 596). Other element would receive the click: &lt;div class=&quot;ant-spin-container&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-91HRFE0&apos;, ip: &apos;20.0.6.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0ab26c3e7c803723a624bd5b09aec0e, clickElement {id=b4acc9aa-d7a7-4a34-a2a8-f4717f0cbb0a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55798/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a0ab26c3e7c803723a624bd5b09aec0e)] -&gt; xpath: (//button[@class=&apos;ant-pagination-item-link&apos;])[2]]
+Session ID: a0ab26c3e7c803723a624bd5b09aec0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at PageOrder.LocationPage.Nextpagination(LocationPage.java:121)
+	at Test.LocationPageTest.paginationTest(LocationPageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.EMagazinePageTest#addingMagazine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.EMagazinePageTest#deleteMagazine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test.EMagazinePageTest#editingMagazine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Test.EMagazinePageTest#enteringMagazinePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Test.EMagazinePageTest#paginationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Test.EventsPageTest#EventsAdd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Test.EventsPageTest#EventsDelete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Test.EventsPageTest#EventsEdit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Test.EventsPageTest#PaginationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Test.EventsPageTest#displayLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Test.LocationPageTest#Editloc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Test.LocationPageTest#deleteLoc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Test.LocationPageTest#enteringLoc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
